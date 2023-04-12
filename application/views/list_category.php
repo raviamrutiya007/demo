@@ -1,5 +1,5 @@
 <button><a href="<?php echo base_url('category'); ?>">Add category</a></button>
-<button><a href="<?php echo base_url('product'); ?>">List Product</a></button>
+<button><a href="<?php echo base_url('product/list_products'); ?>">List Product</a></button>
 <button><a href="<?php echo base_url('Login/logout'); ?>">Logout</a></button>
 
 <h3>Category Listing</h3>
@@ -57,8 +57,7 @@ $(document).ready(function() {
     });   
 
    
-    //Some code
-    }); 
+   
 
 });
 </script>

@@ -17,7 +17,7 @@ class ProductModel extends CI_Model {
     public function get_all_data(){
         $this->db->select('products.*, category.name as category_name')
          ->from('products')
-         ->join('category', 'products.category_id = category.id');
+         ->join('category', 'products.category_id = category.id','left');
         $query = $this->db->get();
         return $query->result();
     }
